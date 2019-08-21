@@ -13,6 +13,7 @@
 		3D1006B8230B57400061DD78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D1006B7230B57400061DD78 /* Assets.xcassets */; };
 		3D1006BB230B57400061DD78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D1006B9230B57400061DD78 /* LaunchScreen.storyboard */; };
 		3D1006C5230CAF7E0061DD78 /* DateAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1006C4230CAF7E0061DD78 /* DateAnalyzer.swift */; };
+		3D1006C7230D9B730061DD78 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1006C6230D9B730061DD78 /* Errors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3D1006BA230B57400061DD78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D1006BC230B57400061DD78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D1006C4230CAF7E0061DD78 /* DateAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateAnalyzer.swift; sourceTree = "<group>"; };
+		3D1006C6230D9B730061DD78 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				3D1006B7230B57400061DD78 /* Assets.xcassets */,
 				3D1006B9230B57400061DD78 /* LaunchScreen.storyboard */,
 				3D1006BC230B57400061DD78 /* Info.plist */,
+				3D1006C6230D9B730061DD78 /* Errors.swift */,
 			);
 			path = "Real-Time_Siddur";
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D1006C7230D9B730061DD78 /* Errors.swift in Sources */,
 				3D1006C5230CAF7E0061DD78 /* DateAnalyzer.swift in Sources */,
 				3D1006B3230B573D0061DD78 /* ViewController.swift in Sources */,
 				3D1006B1230B573D0061DD78 /* AppDelegate.swift in Sources */,
