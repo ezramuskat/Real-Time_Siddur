@@ -61,11 +61,11 @@
 				3D1006B0230B573D0061DD78 /* AppDelegate.swift */,
 				3D1006B2230B573D0061DD78 /* ViewController.swift */,
 				3D1006C4230CAF7E0061DD78 /* DateAnalyzer.swift */,
-				3D1006B4230B573D0061DD78 /* Main.storyboard */,
-				3D1006B7230B57400061DD78 /* Assets.xcassets */,
-				3D1006B9230B57400061DD78 /* LaunchScreen.storyboard */,
-				3D1006BC230B57400061DD78 /* Info.plist */,
 				3D1006C6230D9B730061DD78 /* Errors.swift */,
+				3D1006B4230B573D0061DD78 /* Main.storyboard */,
+				3D1006B9230B57400061DD78 /* LaunchScreen.storyboard */,
+				3D1006B7230B57400061DD78 /* Assets.xcassets */,
+				3D1006BC230B57400061DD78 /* Info.plist */,
 			);
 			path = "Real-Time_Siddur";
 			sourceTree = "<group>";
