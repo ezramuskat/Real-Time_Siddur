@@ -27,7 +27,7 @@ class DateAnalyzer {
         return false
     }
     
-    //returns the current hebrew month in a user-readable format; test later whether necessary in class itself
+    //returns the current hebrew month in a user-readable format; test later whether necessary to implement in class itself
     func month() -> String {
         let key: Int = hebrewCalender.component(.month, from: today)
         if self.isLeapYear() {
