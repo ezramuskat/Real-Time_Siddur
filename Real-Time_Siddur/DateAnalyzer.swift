@@ -10,10 +10,10 @@ import Foundation
 
 class DateAnalyzer {
     let hebrewCalender: Calendar = Calendar.init(identifier: .hebrew) //creates an instance of the Hebrew calender //holds an instance of the Hebrew calender
-    var today: Date //holds an instance of today's date
     let leapYearPositions: [Int] = [3, 6, 8, 11, 14, 17, 19] //holds a list of leap year positions in the Metonic cycle; for more information, see https://en.m.wikipedia.org/wiki/Hebrew_calendar#Leap_years
     let monthDict: [Int: String] = [1: "Tishrei", 2: "Cheshvan", 3: "Kislev", 4: "Tevet", 5: "Shevat", 6: "Adar", 7: "Nissan", 8: "Iyar", 9: "Sivan", 10 : "Tammuz", 11: "Av", 12: "Elul"] //matches each month code to its month in string format
     let monthDictLY: [Int: String] = [1: "Tishrei", 2: "Cheshvan", 3: "Kislev", 4: "Tevet", 5: "Shevat", 6: "Adar Aleph", 7: "Adar Bet", 8: "Nissan", 9: "Iyar", 10 : "Sivan", 11: "Tammuz", 12: "Av", 13: "Elul"] //same as monthDict, but for leap years
+    var today: Date //holds an instance of today's date
     
     init() {
          today = Date.init() //captures today's date in an instance
@@ -21,11 +21,16 @@ class DateAnalyzer {
     
     //determines if the current year is a leap year
     func isLeapYear() -> Bool {
-        for position in leapYearPositions {
+        if leapYearPositions.contains(hebrewCalender.component(.year, from: today) % 19) {
+            return true
+        }
+        
+        /*legacy code:
+         for position in leapYearPositions {
             if (hebrewCalender.component(.year, from: today) % 19) == position {
                 return true
             }
-        }
+        }*/
         return false
     }
     
