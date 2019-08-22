@@ -8,14 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    @IBOutlet weak var leapYearLabel: UIView!
-    @IBOutlet weak var monthLabel: UILabel!
+class ViewController: UITableViewController {
     
     override func viewDidLoad() {
-        let todayDate = DateAnalyzer()
         super.viewDidLoad()
+        let todayDate = DateAnalyzer()
+        title = "\(todayDate.day()) of \(todayDate.month()), \(todayDate.year())"
         // Do any additional setup after loading the view.
     }
 
