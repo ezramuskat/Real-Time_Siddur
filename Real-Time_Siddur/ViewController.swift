@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var monthLabel: UILabel!
     
     override func viewDidLoad() {
-        let todayDate = DateAnalyzer.init()
+        let todayDate = DateAnalyzer()
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
