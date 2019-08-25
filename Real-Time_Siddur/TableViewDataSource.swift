@@ -9,14 +9,17 @@
 import UIKit
 
 class TableViewDataSource: NSObject, UITableViewDataSource {
-    var cellArray: [String]
+    var cellArray = [String]()
     let identifier: String
     
     
-    init(cellArray: [String], identifier: String) {
-        self.cellArray = cellArray
+    init(identifier: String) {
         self.identifier = identifier
         
+    }
+    
+    func setCellArray(cells: [String]) {
+        cellArray = cells
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -24,7 +27,7 @@ class TableViewDataSource: NSObject, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Nusach", for: indexPath)
         cell.textLabel?.text = cellArray[indexPath.row]
         return cell
     }
