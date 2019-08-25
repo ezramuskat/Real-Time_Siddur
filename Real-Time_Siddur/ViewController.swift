@@ -24,7 +24,7 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Section", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Nusach", for: indexPath)
         cell.textLabel?.text = nusach[indexPath.row]
         return cell
     }
