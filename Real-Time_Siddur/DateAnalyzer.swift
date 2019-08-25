@@ -27,13 +27,6 @@ class DateAnalyzer {
         if leapYearPositions.contains(hebrewCalender.component(.year, from: today) % 19) {
             return true
         }
-        
-        /*legacy code:
-         for position in leapYearPositions {
-            if (hebrewCalender.component(.year, from: today) % 19) == position {
-                return true
-            }
-        }*/
         return false
     }
     
