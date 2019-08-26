@@ -28,19 +28,6 @@ class ViewController: UITableViewController {
         vc.nusach = nusach[indexPath.row]
         navigationController?.pushViewController(vc, animated: true)
     }
-    
-    
-    
-    
-    /*override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return nusach.count
-    }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Nusach", for: indexPath)
-        cell.textLabel?.text = nusach[indexPath.row]
-        return cell
-    }*/
 
 }
 
