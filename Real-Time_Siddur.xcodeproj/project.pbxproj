@@ -17,6 +17,7 @@
 		3D170D47231241B00007E9BE /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D170D46231241B00007E9BE /* TableViewDataSource.swift */; };
 		3D170DA72312D7570007E9BE /* SectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D170DA62312D7570007E9BE /* SectionViewController.swift */; };
 		3DF5D45F23148205008554A3 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF5D45E23148205008554A3 /* Text.swift */; };
+		3DF5D461231486DF008554A3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF5D460231486DF008554A3 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		3D170D46231241B00007E9BE /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		3D170DA62312D7570007E9BE /* SectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewController.swift; sourceTree = "<group>"; };
 		3DF5D45E23148205008554A3 /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		3DF5D460231486DF008554A3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,9 +69,10 @@
 				3D1006B0230B573D0061DD78 /* AppDelegate.swift */,
 				3D1006B2230B573D0061DD78 /* ViewController.swift */,
 				3D170DA62312D7570007E9BE /* SectionViewController.swift */,
-				3DF5D45E23148205008554A3 /* Text.swift */,
+				3DF5D460231486DF008554A3 /* DetailViewController.swift */,
 				3D170D46231241B00007E9BE /* TableViewDataSource.swift */,
 				3D1006C4230CAF7E0061DD78 /* DateAnalyzer.swift */,
+				3DF5D45E23148205008554A3 /* Text.swift */,
 				3D1006C6230D9B730061DD78 /* Errors.swift */,
 				3D1006B4230B573D0061DD78 /* Main.storyboard */,
 				3D1006B9230B57400061DD78 /* LaunchScreen.storyboard */,
@@ -157,6 +160,7 @@
 				3D1006C5230CAF7E0061DD78 /* DateAnalyzer.swift in Sources */,
 				3D1006B3230B573D0061DD78 /* ViewController.swift in Sources */,
 				3D1006B1230B573D0061DD78 /* AppDelegate.swift in Sources */,
+				3DF5D461231486DF008554A3 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
