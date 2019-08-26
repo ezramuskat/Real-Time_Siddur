@@ -8,8 +8,9 @@
 
 import UIKit
 
+/// Creates an object to handle the data for table views
 class TableViewDataSource: NSObject, UITableViewDataSource {
-    var cellArray = [String]()
+    var cellArray = [String]() //holds whatever
     let identifier: String
     
     
@@ -27,7 +28,7 @@ class TableViewDataSource: NSObject, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Nusach", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
         cell.textLabel?.text = cellArray[indexPath.row]
         return cell
     }

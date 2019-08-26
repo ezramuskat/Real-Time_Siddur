@@ -15,7 +15,7 @@
 		3D1006C5230CAF7E0061DD78 /* DateAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1006C4230CAF7E0061DD78 /* DateAnalyzer.swift */; };
 		3D1006C7230D9B730061DD78 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1006C6230D9B730061DD78 /* Errors.swift */; };
 		3D170D47231241B00007E9BE /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D170D46231241B00007E9BE /* TableViewDataSource.swift */; };
-		3DA57D5E2310227D008B8548 /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA57D5D2310227D008B8548 /* SelectionViewController.swift */; };
+		3D170DA72312D7570007E9BE /* SectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D170DA62312D7570007E9BE /* SectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		3D1006C4230CAF7E0061DD78 /* DateAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateAnalyzer.swift; sourceTree = "<group>"; };
 		3D1006C6230D9B730061DD78 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		3D170D46231241B00007E9BE /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
-		3DA57D5D2310227D008B8548 /* SelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = "<group>"; };
+		3D170DA62312D7570007E9BE /* SectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 			children = (
 				3D1006B0230B573D0061DD78 /* AppDelegate.swift */,
 				3D1006B2230B573D0061DD78 /* ViewController.swift */,
-				3DA57D5D2310227D008B8548 /* SelectionViewController.swift */,
+				3D170DA62312D7570007E9BE /* SectionViewController.swift */,
 				3D170D46231241B00007E9BE /* TableViewDataSource.swift */,
 				3D1006C4230CAF7E0061DD78 /* DateAnalyzer.swift */,
 				3D1006C6230D9B730061DD78 /* Errors.swift */,
@@ -147,8 +147,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D170DA72312D7570007E9BE /* SectionViewController.swift in Sources */,
 				3D170D47231241B00007E9BE /* TableViewDataSource.swift in Sources */,
-				3DA57D5E2310227D008B8548 /* SelectionViewController.swift in Sources */,
 				3D1006C7230D9B730061DD78 /* Errors.swift in Sources */,
 				3D1006C5230CAF7E0061DD78 /* DateAnalyzer.swift in Sources */,
 				3D1006B3230B573D0061DD78 /* ViewController.swift in Sources */,

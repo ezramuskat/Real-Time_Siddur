@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Creates an object to convert the hebrew date into usable, human-readable pieces
 class DateAnalyzer {
     let hebrewCalender: Calendar = Calendar(identifier: .hebrew) //creates an instance of the Hebrew calender //holds an instance of the Hebrew calender
     let leapYearPositions: [Int] = [3, 6, 8, 11, 14, 17, 19] //holds a list of leap year positions in the Metonic cycle; for more information, see https://en.m.wikipedia.org/wiki/Hebrew_calendar#Leap_years
@@ -22,7 +23,9 @@ class DateAnalyzer {
          today = Date() //captures today's date in an instance
     }
     
-    //determines if the current year is a leap year
+    /// Determines if the current year is a leap year based on the Metonic cycle
+    ///
+    /// - Returns: true if it is a leap year, otherwise returns false
     func isLeapYear() -> Bool {
         if leapYearPositions.contains(hebrewCalender.component(.year, from: today) % 19) {
             return true
@@ -30,7 +33,9 @@ class DateAnalyzer {
         return false
     }
     
-    //returns the current hebrew month in a user-readable format; test later whether necessary to implement in class itself
+    /// Matches Apple's numeric month calender component to the name of the current month
+    ///
+    /// - Returns: The current hebrew month in a user-readable format
     func month() -> String {
         let key: Int = hebrewCalender.component(.month, from: today)
         if self.isLeapYear() {

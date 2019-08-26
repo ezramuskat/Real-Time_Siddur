@@ -23,6 +23,12 @@ class ViewController: UITableViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = SectionViewController()
+        vc.nusach = nusach[indexPath.row]
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
     
     
     
