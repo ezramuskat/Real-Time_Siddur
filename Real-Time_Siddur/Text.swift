@@ -12,10 +12,12 @@ import Foundation
 struct Text: Codable {
     var book: String
     var categories: [String]
+    //var commentary: [AnyHashable:AnyHashable]
     var he: [String]
     var heVersionSource: String
     var heVersionTitle: String
     var length: Int
+    //var maps: [NSMapTable<AnyObject, AnyObject>]
     var next: String
     var order: [Int]
     var prev: String
