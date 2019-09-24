@@ -12,7 +12,7 @@ import WebKit
 class DetailViewController: UIViewController {
     var webView: WKWebView!
     var zman: String = "Unknown"
-    let urlString: String = "https://www.sefaria.org/api/texts/Kohelet.5"
+    
     var text: Text?
     
     
@@ -23,7 +23,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        let urlString: String = "https://www.sefaria.org/api/texts/Siddur_Ashkenaz%2C_Weekday%2C_Shacharit%2C_Preparatory_Prayers%2C_Modeh_Ani"
         
         if let url = URL(string: urlString) {
             if let data = try? Data(contentsOf: url) {
@@ -43,7 +43,7 @@ class DetailViewController: UIViewController {
         Test header
         </h1>
         <body>
-        \(text.book)
+        \(text.he[0])
         </body>
         </html>
         """
@@ -59,6 +59,8 @@ class DetailViewController: UIViewController {
             print("Stuff happened")
             text = jsonTexts
             webView.reload()
+        } else {
+            print("Nothing happened...")
         }
     }
 
