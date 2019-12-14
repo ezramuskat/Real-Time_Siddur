@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D048D2C23A576AC0087EAE4 /* HolidayAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D048D2B23A576AC0087EAE4 /* HolidayAnalyzer.swift */; };
+		3D048D3023A5806E0087EAE4 /*  Holiday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D048D2F23A5806E0087EAE4 /*  Holiday.swift */; };
 		3D1006B1230B573D0061DD78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1006B0230B573D0061DD78 /* AppDelegate.swift */; };
 		3D1006B3230B573D0061DD78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1006B2230B573D0061DD78 /* ViewController.swift */; };
 		3D1006B6230B573D0061DD78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D1006B4230B573D0061DD78 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 		3D1006C7230D9B730061DD78 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1006C6230D9B730061DD78 /* Errors.swift */; };
 		3D170D47231241B00007E9BE /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D170D46231241B00007E9BE /* TableViewDataSource.swift */; };
 		3D170DA72312D7570007E9BE /* SectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D170DA62312D7570007E9BE /* SectionViewController.swift */; };
+		3D5BC5E0234E7A4E00569D5F /* TalUMatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5BC5DF234E7A4E00569D5F /* TalUMatar.swift */; };
+		3D5BC5E2234E7C3F00569D5F /* Months.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5BC5E1234E7C3F00569D5F /* Months.swift */; };
 		3DC98BC32324550100EA3ECF /* TextAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC98BC22324550100EA3ECF /* TextAnalyzer.swift */; };
 		3DC98BC52324565F00EA3ECF /* ShirShelYom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC98BC42324565F00EA3ECF /* ShirShelYom.swift */; };
 		3DF5D45F23148205008554A3 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF5D45E23148205008554A3 /* Text.swift */; };
@@ -23,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D048D2B23A576AC0087EAE4 /* HolidayAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayAnalyzer.swift; sourceTree = "<group>"; };
+		3D048D2F23A5806E0087EAE4 /*  Holiday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " Holiday.swift"; sourceTree = "<group>"; };
 		3D1006AD230B573D0061DD78 /* Real-Time_Siddur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Real-Time_Siddur.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D1006B0230B573D0061DD78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D1006B2230B573D0061DD78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,6 +40,8 @@
 		3D1006C6230D9B730061DD78 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		3D170D46231241B00007E9BE /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		3D170DA62312D7570007E9BE /* SectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewController.swift; sourceTree = "<group>"; };
+		3D5BC5DF234E7A4E00569D5F /* TalUMatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalUMatar.swift; sourceTree = "<group>"; };
+		3D5BC5E1234E7C3F00569D5F /* Months.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Months.swift; sourceTree = "<group>"; };
 		3DC98BC22324550100EA3ECF /* TextAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAnalyzer.swift; sourceTree = "<group>"; };
 		3DC98BC42324565F00EA3ECF /* ShirShelYom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShirShelYom.swift; sourceTree = "<group>"; };
 		3DF5D45E23148205008554A3 /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
@@ -70,20 +78,24 @@
 		3D1006AF230B573D0061DD78 /* Real-Time_Siddur */ = {
 			isa = PBXGroup;
 			children = (
+				3D1006BC230B57400061DD78 /* Info.plist */,
+				3D048D2F23A5806E0087EAE4 /*  Holiday.swift */,
 				3D1006B0230B573D0061DD78 /* AppDelegate.swift */,
-				3D1006B2230B573D0061DD78 /* ViewController.swift */,
-				3D170DA62312D7570007E9BE /* SectionViewController.swift */,
+				3D1006C4230CAF7E0061DD78 /* DateAnalyzer.swift */,
 				3DF5D460231486DF008554A3 /* DetailViewController.swift */,
-				3DC98BC22324550100EA3ECF /* TextAnalyzer.swift */,
+				3D1006C6230D9B730061DD78 /* Errors.swift */,
+				3D048D2B23A576AC0087EAE4 /* HolidayAnalyzer.swift */,
+				3D5BC5E1234E7C3F00569D5F /* Months.swift */,
+				3D170DA62312D7570007E9BE /* SectionViewController.swift */,
 				3DC98BC42324565F00EA3ECF /* ShirShelYom.swift */,
 				3D170D46231241B00007E9BE /* TableViewDataSource.swift */,
-				3D1006C4230CAF7E0061DD78 /* DateAnalyzer.swift */,
+				3D5BC5DF234E7A4E00569D5F /* TalUMatar.swift */,
 				3DF5D45E23148205008554A3 /* Text.swift */,
-				3D1006C6230D9B730061DD78 /* Errors.swift */,
-				3D1006B4230B573D0061DD78 /* Main.storyboard */,
-				3D1006B9230B57400061DD78 /* LaunchScreen.storyboard */,
+				3DC98BC22324550100EA3ECF /* TextAnalyzer.swift */,
+				3D1006B2230B573D0061DD78 /* ViewController.swift */,
 				3D1006B7230B57400061DD78 /* Assets.xcassets */,
-				3D1006BC230B57400061DD78 /* Info.plist */,
+				3D1006B9230B57400061DD78 /* LaunchScreen.storyboard */,
+				3D1006B4230B573D0061DD78 /* Main.storyboard */,
 			);
 			path = "Real-Time_Siddur";
 			sourceTree = "<group>";
@@ -160,12 +172,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D170DA72312D7570007E9BE /* SectionViewController.swift in Sources */,
+				3D048D2C23A576AC0087EAE4 /* HolidayAnalyzer.swift in Sources */,
 				3D170D47231241B00007E9BE /* TableViewDataSource.swift in Sources */,
 				3D1006C7230D9B730061DD78 /* Errors.swift in Sources */,
 				3DF5D45F23148205008554A3 /* Text.swift in Sources */,
+				3D5BC5E2234E7C3F00569D5F /* Months.swift in Sources */,
 				3DC98BC32324550100EA3ECF /* TextAnalyzer.swift in Sources */,
 				3D1006C5230CAF7E0061DD78 /* DateAnalyzer.swift in Sources */,
 				3D1006B3230B573D0061DD78 /* ViewController.swift in Sources */,
+				3D048D3023A5806E0087EAE4 /*  Holiday.swift in Sources */,
+				3D5BC5E0234E7A4E00569D5F /* TalUMatar.swift in Sources */,
 				3DC98BC52324565F00EA3ECF /* ShirShelYom.swift in Sources */,
 				3D1006B1230B573D0061DD78 /* AppDelegate.swift in Sources */,
 				3DF5D461231486DF008554A3 /* DetailViewController.swift in Sources */,
