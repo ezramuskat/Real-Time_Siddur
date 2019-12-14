@@ -10,7 +10,7 @@ import Foundation
 
 class ShirShelYom: TextAnalyzer {
     let day: Int = Calendar.current.component(.weekday, from: Date())
-    let dayNames: [Int:String] = [1: "יום ראשון"]
+    let dayNames: [Int:String] = [1: "יום ראשון", 2 : "יום שני"]
     
     override func getText() -> String {
         guard let dayName: String = dayNames[day] else {return "Whoops! Looks like something went wrong here; please send a bug report to the app developer"}

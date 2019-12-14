@@ -17,7 +17,12 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let todayDate = DateAnalyzer()
-        title = "\(todayDate.day()) of \(todayDate.month()), \(todayDate.year())"
+        
+        do {
+            try title = "\(todayDate.day()) of \(todayDate.month()), \(todayDate.year())"
+        } catch Errors.stdError(let errorMessage) {
+            title = errorMessage
+        }
         tableSource.setCellArray(cells: nusach)
         tableView.dataSource = tableSource
         // Do any additional setup after loading the view.
