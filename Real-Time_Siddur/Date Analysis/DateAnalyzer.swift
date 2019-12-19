@@ -48,11 +48,11 @@ class DateAnalyzer {
         if self.isLeapYear() {
             guard let month = monthDictLY[key] else { throw Errors.stdError(message: errorMessage)
             }
-            return month.get()
+            return month.getName()
         } else {
             guard let month = monthDict[key] else { throw Errors.stdError(message: errorMessage)
             }
-            return month.get()
+            return month.getName()
         }
     }
     

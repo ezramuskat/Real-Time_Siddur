@@ -25,7 +25,7 @@ enum Month {
     case Adar_Bet
     case MonthNotFound
     
-    func get() -> String {
+    func getName() -> String {
         switch self {
         case .Tishrei:
             return "Tishrei"
