@@ -8,6 +8,8 @@
 
 import Foundation
 
+
+/// Holds date about the  holiday for easy acces
 struct HolidayData {
     let isHoliday: Bool
     let holiday: Holiday

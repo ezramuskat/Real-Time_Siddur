@@ -15,7 +15,7 @@ class TextAnalyzer {
         self.text = text
     }
     
-    func getText() -> String {
+    func getText() throws -> String {
         return text
     }
 }

@@ -9,11 +9,26 @@
 import Foundation
 
 
-
+/// 
 enum Holiday: String {
     case Sukkot
     case Hannukah
     case Purim
     case Passover
     case None
+    
+    func getName() -> String {
+        switch self {
+        case .Sukkot:
+            return "Sukkot"
+        case .Hannukah:
+            return "Hannukah"
+        case .Purim:
+            return "Purim"
+        case .Passover:
+            return "Passover"
+        case .None:
+            return "None"
+        }
+    }
 }

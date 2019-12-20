@@ -9,42 +9,43 @@
 import Foundation
 
 
-/// Holds relevant holiday information about the day
-class HolidayAnalyzer {
-    let holidayMonths: [Month] = [.Tishrei, .Kislev, .Tevet, .Adar, .Adar_Bet, .Nissan]
-    let daysOfSukkot: [Int] = [15,16,17,18,19,20,21,22]
-    let daysOfHannukahKislev: [Int] = [25,26,27,28,29,30]
+/// Produces relevant holiday-specific information about the day
+class HolidayAnalyzer: SpecialDayAnalyzer {
     
-    let month: Month
-    let day: Int
-    
-    init(month: Month, day: Int) {
-        self.month = month
-        self.day = day
+    /// Outputs all relevant data about the holiday status of the day
+    ///
+    /// - Returns: A HolidayData struct containing data about the day
+    func getData() -> HolidayData {
+        return HolidayData(isHoliday: super.isHoliday(), holiday: holiday(), holidayName: holiday().getName(), dayOf: dayOf())
     }
     
-    func isHoliday() -> Bool {
-        if holidayMonths.contains(self.month) {
+    func holiday() -> Holiday {
+        if super.isHoliday() {
             switch self.month {
             case .Tishrei:
-                if daysOfSukkot.contains(self.day) {
-                    return true
-                } else {
-                    return false
-                }
+                return .Sukkot
             case .Kislev:
-                if daysOfHannukahKislev.contains(self.day) {
-                    return true
-                } else {
-                    return false
-                }
+                return .Hannukah
+            case .Tevet:
+                return .Hannukah
+            case .Adar:
+                return .Purim
+            case .Adar_Bet:
+                return .Purim
+            case .Nissan:
+                return .Passover
             default:
-                return false
+                return .None
             }
         }
-        return false
+        return .None
     }
     
-    
+    func dayOf() -> Int? {
+        if isHoliday() {
+            
+        }
+        return nil
+    }
     
 }

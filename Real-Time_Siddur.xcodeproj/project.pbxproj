@@ -18,6 +18,11 @@
 		3D1006C7230D9B730061DD78 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1006C6230D9B730061DD78 /* Errors.swift */; };
 		3D170D47231241B00007E9BE /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D170D46231241B00007E9BE /* TableViewDataSource.swift */; };
 		3D170DA72312D7570007E9BE /* SectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D170DA62312D7570007E9BE /* SectionViewController.swift */; };
+		3D2D575123ABC2B400603417 /* SpecialDayAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2D575023ABC2B400603417 /* SpecialDayAnalyzer.swift */; };
+		3D2D575323ABC4CB00603417 /* FastDayAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2D575223ABC4CB00603417 /* FastDayAnalyzer.swift */; };
+		3D2D575523ABC4EA00603417 /* FastDayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2D575423ABC4EA00603417 /* FastDayData.swift */; };
+		3D2D575723ABC62800603417 /* FastDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2D575623ABC62800603417 /* FastDay.swift */; };
+		3D2D575923ACE85800603417 /* DateError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2D575823ACE85800603417 /* DateError.swift */; };
 		3D5BC5E0234E7A4E00569D5F /* TalUMatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5BC5DF234E7A4E00569D5F /* TalUMatar.swift */; };
 		3D5BC5E2234E7C3F00569D5F /* Months.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5BC5E1234E7C3F00569D5F /* Months.swift */; };
 		3DC98BC32324550100EA3ECF /* TextAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC98BC22324550100EA3ECF /* TextAnalyzer.swift */; };
@@ -41,6 +46,11 @@
 		3D1006C6230D9B730061DD78 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		3D170D46231241B00007E9BE /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		3D170DA62312D7570007E9BE /* SectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewController.swift; sourceTree = "<group>"; };
+		3D2D575023ABC2B400603417 /* SpecialDayAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialDayAnalyzer.swift; sourceTree = "<group>"; };
+		3D2D575223ABC4CB00603417 /* FastDayAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastDayAnalyzer.swift; sourceTree = "<group>"; };
+		3D2D575423ABC4EA00603417 /* FastDayData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastDayData.swift; sourceTree = "<group>"; };
+		3D2D575623ABC62800603417 /* FastDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastDay.swift; sourceTree = "<group>"; };
+		3D2D575823ACE85800603417 /* DateError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateError.swift; sourceTree = "<group>"; };
 		3D5BC5DF234E7A4E00569D5F /* TalUMatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalUMatar.swift; sourceTree = "<group>"; };
 		3D5BC5E1234E7C3F00569D5F /* Months.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Months.swift; sourceTree = "<group>"; };
 		3DC98BC22324550100EA3ECF /* TextAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAnalyzer.swift; sourceTree = "<group>"; };
@@ -101,6 +111,11 @@
 			isa = PBXGroup;
 			children = (
 				3D048D2B23A576AC0087EAE4 /* HolidayAnalyzer.swift */,
+				3D2D575423ABC4EA00603417 /* FastDayData.swift */,
+				3D2D575623ABC62800603417 /* FastDay.swift */,
+				3D2D575023ABC2B400603417 /* SpecialDayAnalyzer.swift */,
+				3D2D575823ACE85800603417 /* DateError.swift */,
+				3D2D575223ABC4CB00603417 /* FastDayAnalyzer.swift */,
 				3D5BC5E1234E7C3F00569D5F /* Months.swift */,
 				3D1006C4230CAF7E0061DD78 /* DateAnalyzer.swift */,
 				3D048D2F23A5806E0087EAE4 /*  Holiday.swift */,
@@ -190,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D2D575523ABC4EA00603417 /* FastDayData.swift in Sources */,
 				3D170DA72312D7570007E9BE /* SectionViewController.swift in Sources */,
 				3D048D2C23A576AC0087EAE4 /* HolidayAnalyzer.swift in Sources */,
 				3D170D47231241B00007E9BE /* TableViewDataSource.swift in Sources */,
@@ -198,8 +214,12 @@
 				3D5BC5E2234E7C3F00569D5F /* Months.swift in Sources */,
 				3DC98BC32324550100EA3ECF /* TextAnalyzer.swift in Sources */,
 				3D1006C5230CAF7E0061DD78 /* DateAnalyzer.swift in Sources */,
+				3D2D575123ABC2B400603417 /* SpecialDayAnalyzer.swift in Sources */,
+				3D2D575923ACE85800603417 /* DateError.swift in Sources */,
 				3D1006B3230B573D0061DD78 /* ViewController.swift in Sources */,
 				3D048D3023A5806E0087EAE4 /*  Holiday.swift in Sources */,
+				3D2D575723ABC62800603417 /* FastDay.swift in Sources */,
+				3D2D575323ABC4CB00603417 /* FastDayAnalyzer.swift in Sources */,
 				3D5BC5E0234E7A4E00569D5F /* TalUMatar.swift in Sources */,
 				3DC98BC52324565F00EA3ECF /* ShirShelYom.swift in Sources */,
 				3D1006B1230B573D0061DD78 /* AppDelegate.swift in Sources */,
