@@ -9,10 +9,12 @@
 import Foundation
 
 
-/// Holds relevant holiday information about the day
+/// Produces relevant holiday-specific information about the day
 class HolidayAnalyzer: SpecialDayAnalyzer {
     
-    
+    /// Outputs all relevant data about the holiday status of the day
+    ///
+    /// - Returns: A HolidayData struct containing data about the day
     func getData() -> HolidayData {
         return HolidayData(isHoliday: super.isHoliday(), holiday: holiday(), holidayName: holiday().getName(), dayOf: dayOf())
     }

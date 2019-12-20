@@ -8,8 +8,13 @@
 
 import Foundation
 
+
+/// Produces relevant fast day-specific information about the day
 class FastDayAnalyzer: SpecialDayAnalyzer {
     
+    /// Outputs all relevant data about the fast day status of the day
+    ///
+    /// - Returns: A FastDayData struct containing data about the day
     func getData() -> FastDayData {
         return FastDayData(isFastDay: super.isFastDay(), fastDay: fastDay(), fastDayName: fastDay().getName())
        }

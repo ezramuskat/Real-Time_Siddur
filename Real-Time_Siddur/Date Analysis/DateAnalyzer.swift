@@ -33,13 +33,7 @@ class DateAnalyzer {
         return false
     }
     
-    func holiday() -> Holiday {
-        let holidayStatus = HolidayAnalyzer(month: internalMonth(), day: day())
-        if holidayStatus.isHoliday() {
-            
-        }
-        return .None
-    }
+    
     /// Matches Apple's numeric month calender component to the name of the current month
     ///
     /// - Returns: The current hebrew month in a user-readable format

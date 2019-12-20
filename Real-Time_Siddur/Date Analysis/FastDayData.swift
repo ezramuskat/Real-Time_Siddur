@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Holds date about the fast iday for easy access
 struct FastDayData {
     let isFastDay: Bool
     let fastDay: FastDay
